@@ -12,7 +12,8 @@ export default function ProductDetail() {
     productService
       .getByProductName(name)
       .then((result) => setProduct(result.data.data));
-  }, []);
+  });
+
   return (
     <div>
       <Card.Group>
